@@ -1,0 +1,53 @@
+/* Nav Bar Style */
+
+nav {
+  background-color: rgba(0,0,0,.9);
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-family: 'Cutive', serif;
+  padding: .5rem 1rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+nav a:hover {
+  color: hsla(0,0%,77%);
+  transition: color .15s ease-in-out;
+}
+
+.sign-up {
+  border: 1px solid hsla(0,0%,100%,.2);
+  border-radius: 9999px;
+}
+
+.sign-up:hover {
+  background-color:#fff;
+  color: #000;
+  transition: background-color .15s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav a {
+    float: right;
+  }
+  .home {
+    float: left;
+  }
+  /* Clearfix */
+  nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
